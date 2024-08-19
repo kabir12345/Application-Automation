@@ -1,0 +1,177 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[top=0.2in,bottom=0.2in,left=0.2in,right=0.2in]{geometry}
+\usepackage{times}
+\usepackage{enumitem}
+
+\linespread{1}
+\setlist[itemize]{itemsep=0pt}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,    
+  urlcolor=blue,
+  pdftitle={Kabir Jaiswal's Resume}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+ \vspace{-13pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \color{black} \vspace{-4pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} #2 \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Large Kabir Jaiswal} \\
+
+  \href{mailto:kabirjaiswal900@gmail.com}{EMAIL} |
+  \href{https://www.linkedin.com/in/kabir-j}{LinkedIn} |
+  \href{https://github.com/kabir12345}{Github} |
+  +1 (980)-446-4489 |
+  New York, NY (Open to Relocation)
+\end{center}
+
+\section{Summary}
+Experienced Machine Learning Engineer with 4+ years in full-stack development, deploying production-grade ML solutions, and data pipelines.
+Proficient in agile environments and cross-functional collaboration, adept at translating complex models into actionable insights.
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+    \resumeItem{ML, MLOps \& NLP}{PyTorch, TensorFlow, Hugging Face, ScikitLearn, MLflow, ClearML, Apache Airflow, Docker, Kubernetes, Terraform}
+    \resumeItem{Cloud Platforms}{AWS, GCP, Azure}
+    \resumeItem{Software Engineering}{API Development, Version Control (Git), A/B Testing, Experimentation,Data Generation, Labeling}
+    \resumeItem{Programming Languages}{Python, R, C++}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\vspace{1pt}
+\resumeSubheading
+  {Machine Learning Engineer}{January 2024 – May 2024}
+  {BrandGuard AI}{New York, USA}
+\resumeItemListStart
+    \item Architected and implemented a resource-efficient custom vector embeddings for brands, optimized for 500 MFLOPs inference budget, leveraging quantization techniques and distillation methods.
+    \item Enhanced BrandGPT RAG system using RagaTouille  with ColBERT-based dense retrieval, implementing context-aware filtering.
+    \item Spearheaded end-to-end MLOps pipeline development, integrating GitOps principles, containerized deployments, and automated A/B testing frameworks, reducing deployment cycles by 30\%.
+    \item Orchestrated comprehensive LLM fine-tuning and evaluation pipeline using Baserun for telemetry and RAGAS for multi-dimensional quality assessment, optimizing inference costs and mitigating hallucinations.
+\resumeItemListEnd
+
+\resumeSubheading
+  {Machine Learning Engineer}{September 2023 – December 2023}
+  {BrandGuard AI (Formerly Nova AI,Inc.) }{New York, USA}
+\resumeItemListStart
+    \item Launched synthetic data generation pipeline for ads using stable diffusion \& FastAPI. Optimized for parallel processing reducing asset creation time by 40\%.
+    \item Conducted throughput analysis on platforms including MLflow and ClearML, utilizing AWS EC2 instances and ELB for load simulation.
+    \item Orchestrated MLflow deployment on GCP using Infrastructure as Code (IaC) with Terraform, implementing a robust MLOps ecosystem. Integrated CI/CD pipelines, distributed monitoring and Git-based model versioning for reproducibility and governance.
+    \item Spearheaded evaluation of enterprise-grade data labeling solutions, including Human Signal and V7 Labs, focusing on active learning strategies and quality control mechanisms.
+\resumeItemListEnd
+
+\resumeSubheading
+  {Full Stack Developer}{January 2018 – March 2022}
+  {Freelance}{New Delhi, India}
+\resumeItemListStart
+    \item Developed end-to-end products including ERPs, ticketing systems, and blockchain contracts using MERN stack.
+    \item Implemented custom e-commerce solutions on the Liquid framework, integrating RESTful APIs, payment gateways.
+    \item Orchestrated scalable deployments on AWS (EC2, S3, RDS) and GCP utilizing Docker for containerization and implementing CI/CD.
+    \item Led a team of 5 developers using Agile methodologies, conducting code reviews, and implementing ELK stack for monitoring.
+    \item Managed client relationships, including requirement gathering, regular progress updates, and facilitating knowledge transfer.
+\resumeItemListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    % \resumeProjectHeading
+    %   {GoDesigner}{ — GitHub: \href{https://github.com/kabir12345/godesigner}{github.com/kabir12345/godesigner}}
+    % \resumeItemListStart
+    %       \item Engineered a Flask app for interior design recommendations using CLIP embeddings, integrating SAM and Google Shopping API, and deployed on AWS ECS for optimized proposal generation.
+    % \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Spatial Sense}{ — GitHub: \href{https://github.com/kabir12345/SpatialSenseWeb}{github.com/kabir12345/SpatialSenseWeb}}
+    \resumeItemListStart
+          \item Developed a real-time navigation aid using Qualcomm Gen 2 edge devices, with PEFT quantization of LLaVA-1.6 for reduced inference time and improved obstacle detection.
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Qualitative Analysis of Quantization Techniques for Text Summarization}{ — GitHub: \href{https://github.com/kabir12345/LLM-PEFT-Optimization}{github.com/kabir12345/LLM-PEFT-Optimization}}
+    \resumeItemListStart
+          \item Optimized on-device LLM deployment by fine-tuning Mistral-7B and Llama on the CNN dataset, enhancing BLEU scores with minimal performance loss using LoRA and IA3.
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Publications}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {Fog Computing Concepts, Frameworks, and Applications}{ — Taylor and Francis Publications}
+    \resumeItemListStart
+          \item Co-Author and Academic Research Assistant (University of Petroleum and Energy Studies).
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {Apache Airflow Operator for KDB Integration}{ — GitHub: \href{https://pypi.org/project/airflow-kdb-provider/}{airflow-kdb-provider}}
+    \resumeItemListStart
+          \item Architected and developed an Apache Airflow operator for KDB using Python and the Astronomer open-source framework.
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{May 2024}
+      {Master of Science in Computer Engineering}{New York, USA}
+    \resumeSubheading
+      {University of Petroleum and Energy Studies}{July 2022}
+      {Bachelor of Technology in Computer Science (Concentration: AI \& ML)}{Uttarakhand, India}
+\resumeSubHeadingListEnd
+
+\end{document}

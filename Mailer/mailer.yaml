@@ -1,0 +1,20 @@
+sender_email: "sample@email.com"
+smtp_server: "smtp.gmail.com"
+smtp_port: 587
+
+recipients:
+  - email: "sample@email.com"
+    name: "sample user"
+
+
+subject: add subject"
+attachment_path: "/path/to/attachment.pdf"
+
+email_body: |
+  <html>
+    <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+      <p>Hello {recipient_name},</p>
+      <p>Sample text</p>
+    </body>
+  </html>
+  
